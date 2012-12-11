@@ -1,0 +1,75 @@
+2011-12-29 Mixed Theme Package for FVWM v0.6 <clemens@vakuumverpackt.de>
+
+	* Added air1 theme.
+
+	* Added air2 theme.
+
+	* Added blue stripes theme.
+
+	* Added cable theme.
+
+	* Added elegant stripes theme.
+
+	* Added wheat theme.
+
+	* Added FvwmRearrange.
+
+	* Updated for FVWM 2.6.
+
+	* Updated key bindings.
+
+	* Updated mouse bindings.
+
+	* Updated green stripes theme for 1920x1200.
+
+	* Updated grey stripes theme for 1920x1200.
+
+	* Updated pink theme for 1920x1200.
+
+	* Updated waitingroom theme for 1920x1200.
+
+	* Configuration clean up.
+
+
+2008-12-27 Mixed Theme Package for FVWM v0.5 <clemens@vakuumverpackt.de>
+
+	* Added some suggestions from Thomas Adam.
+
+
+2008-04-15 Mixed Theme Package for FVWM v0.4 <clemens@vakuumverpackt.de>
+
+	* Added green stripes theme.
+
+	* Added grey stripes theme.
+
+	* Added pink theme.
+
+	* Added deer theme.
+
+	* Added waiting room theme.
+
+	* Configuration clean up.
+
+
+2007-09-15 Mixed Theme Package for FVWM v0.3 <clemens@vakuumverpackt.de>
+
+	* Added meadow theme.
+
+	* Added xcompmgr support.
+
+	* Added date to clock script.
+
+
+2006-06-24 Mixed Theme Package for FVWM v0.2 <clemens@vakuumverpackt.de>
+
+	* Added green theme.
+
+	* Added clock script.
+
+	* Removed icon box.
+
+
+2005-03-30 Mixed Theme Package for FVWM v0.1 <clemens@vakuumverpackt.de>
+
+	* First public release.
+

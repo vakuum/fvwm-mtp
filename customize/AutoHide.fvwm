@@ -1,0 +1,27 @@
+##
+## See INSTALL, README and CUSTOMIZE for more information.
+##
+
+AddToFunc AutoHideEnter
+	+ I AutoHide xclock 500 E
+	+ I AutoHide xload 500 E
+	+ I AutoHide log 500 S
+	+ I AutoHide clock.FvwmScript 500 S
+
+AddToFunc AutoHidePlacementHandler
+	+ I Schedule 1000 ThisWindow ("xclock") WindowShade E
+	+ I Schedule 1000 ThisWindow ("xload") WindowShade E
+	+ I Schedule 1000 ThisWindow ("log") WindowShade S
+	+ I Schedule 1000 ThisWindow ("clock.FvwmScript") WindowShade S
+
+
+
+##
+## AutoHide Styles
+##
+
+Style "clock.FvwmScript" !Title, Sticky, NeverFocus, WindowListSkip, WindowShadeSteps $[mtp_auto_hide_steps], WindowShadeScrolls, WindowShadeBusy, !Borders, StaysOnBottom
+Style "log" !Title, Sticky, NeverFocus, WindowListSkip, WindowShadeSteps $[mtp_auto_hide_steps], WindowShadeScrolls, WindowShadeBusy
+Style "xclock" !Title, Sticky, NeverFocus, WindowListSkip, WindowShadeSteps $[mtp_auto_hide_steps], WindowShadeScrolls, WindowShadeBusy
+Style "xload" !Title, Sticky, NeverFocus, WindowListSkip, WindowShadeSteps $[mtp_auto_hide_steps], WindowShadeScrolls, WindowShadeBusy
+

@@ -1,0 +1,32 @@
+##
+## See INSTALL, README and CUSTOMIZE for more information.
+##
+
+## Pager
+Colorset 1 RootTransparent, tint rgb:BE/BE/BE 60
+Colorset 2 RootTransparent, tint rgb:80/80/80 60
+Colorset 3 RootTransparent, tint rgb:80/80/80 50
+
+*FvwmPager: NoSeparators
+
+## Menus
+Colorset 4 fg black, bg rgb:F0/F0/F0, hi rgb:F0/F0/F0, sh rgb:F0/F0/F0, TiledPixmap $[theme_images]/background-menu.png
+Colorset 5 fg rgb:F0/F0/F0, bg black, hi rgb:F0/F0/F0
+
+MenuStyle * TrianglesUseFore
+
+## Borders
+Colorset 6 bg rgb:F0/F0/F0, TiledPixmap $[theme_images]/background-border.png
+Colorset 7 bg rgb:F0/F0/F0, TiledPixmap $[theme_images]/background-border.png
+
+## Window titles
+Colorset 8 bg rgb:F0/F0/F0, TiledPixmap $[theme_images]/background-title.png
+Colorset 9 bg rgb:F0/F0/F0, TiledPixmap $[theme_images]/background-title.png
+
+## Icons
+Colorset 10 IconAlpha 70
+Colorset 11 IconAlpha 70
+
+## Clock
+Colorset 12 RootTransparent, tint black 30, fg rgb:F0/F0/F0
+

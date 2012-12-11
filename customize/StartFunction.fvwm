@@ -1,0 +1,10 @@
+##
+## See INSTALL, README and CUSTOMIZE for more information.
+##
+
+AddToFunc StartFunction
+	+ I Test (Init) Exec bash $[mtp_scripts]/xcompmgr-start $[mtp_scripts]
+	+ I Test (Init) Exec xterm -T log -ls -geometry 96x10+0-0 -sl 5000 -fa '$[mtp_font_mono]' -fs $[mtp_font_mono_size] -e 'tail -f /var/log/messages'
+	+ I Test (Init) Exec xclock -geometry 164x164-0+211
+	+ I Test (Init) Exec xload -update 1 -geometry 164x164-0+425
+

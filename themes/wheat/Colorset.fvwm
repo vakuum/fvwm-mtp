@@ -1,0 +1,26 @@
+##
+## See INSTALL, README and CUSTOMIZE for more information.
+##
+
+## Pager
+Colorset 1 RootTransparent, tint black 25
+Colorset 2 RootTransparent buffer, tint black 10
+Colorset 3 RootTransparent buffer, tint black 25
+
+*FvwmPager: NoSeparators
+
+## Menus
+Colorset 4 RootTransparent buffer, fg rgb:EE/EE/EE, bg black, hi black, sh black, tint black 25
+Colorset 5 fg rgb:EE/EE/EE, bg black, hi black
+
+## Borders and window titles
+Colorset 6 RootTransparent buffer, tint black 10
+Colorset 7 RootTransparent buffer, tint black 25
+
+## Icons
+Colorset 10 IconAlpha 70
+Colorset 11 IconAlpha 70
+
+## Clock
+Colorset 12 RootTransparent, fg white, tint black 25
+

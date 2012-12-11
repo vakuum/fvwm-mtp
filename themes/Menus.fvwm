@@ -1,0 +1,149 @@
+##
+## See INSTALL, README and CUSTOMIZE for more information.
+##
+
+##
+## Menus
+##
+
+MenuStyle * \
+	ActiveColorset 5, \
+	Animation, \
+	BorderWidth 1, \
+	DoubleClickTime 0, \
+	Hilight3DOff, \
+	HilightBack, \
+	ItemFormat "%10.40l%.10>", \
+	MenuColorset 4, \
+	PopupOffset -1 100, \
+	SeparatorsLong, \
+	TrianglesSolid, \
+	VerticalItemSpacing 10 10
+
+DestroyMenu MenuGeometry
+AddToMenu MenuGeometry
+	+ "1280 x 1024" Resize frame 1280p 1024p
+	+ "1280 x 960" Resize frame 1280p 960p
+	+ "1024 x 768" Resize frame 1024p 768p
+	+ "800 x 600" Resize frame 800p 600p
+	+ "640 x 480" Resize frame 640p 480p
+	+ "320 x 240" Resize frame 320p 240p
+
+DestroyMenu WindowOptions
+AddToMenu WindowOptions
+	+ "center" WindowCenterCurrent
+	+ "move" Move
+	+ "resize" Resize
+	+ "shade" WindowShade
+	+ "stick" Stick
+	+ "" Nop
+	+ "decoration" Popup MenuDecoration
+	+ "geometry" Popup MenuGeometry
+	+ "layer" Popup MenuLayer
+	+ "" Nop
+	+ "zoom" Pick Exec xmag -source $[w.width]x$[w.height]+$[w.x]+$[w.y] -mag 2
+	+ "" Nop
+	+ "close" Close
+	+ "delete" Delete
+	+ "destroy" Destroy
+
+DestroyMenu MenuLayer
+AddToMenu MenuLayer
+	+ "top" Layer 0 6
+	+ "normal" Layer 0 4
+	+ "bottom" Layer 0 2
+	+ "" Nop
+	+ "raise" Raise
+	+ "lower" Lower
+
+DestroyMenu MenuDecoration
+AddToMenu MenuDecoration
+	+ "add borders" ThisWindow WindowStyle Borders, Title
+	+ "remove borders" ThisWindow WindowStyle !Borders, !Title
+	+ "add title" ThisWindow WindowStyle Title
+	+ "remove title" ThisWindow WindowStyle !Title
+
+DestroyMenu MenuMain
+AddToMenu MenuMain
+	+ "xterm" Xterm
+	+ "" Nop
+	+ "applications" Popup MenuApplication
+	+ "" Nop
+	+ "dpms" Popup MenuDpms
+	+ "rearrange" Popup MenuRearrange
+	+ "resolution" Popup MenuResolution
+	+ "xcompmgr" Popup MenuXcompmgr
+	+ "" Nop
+	+ "restart" Function Restart
+	+ "exit" Menu MenuExit
+
+DestroyMenu MenuDpms
+AddToMenu MenuDpms
+	+ "standby" Exec sleep 1; xset dpms force standby
+	+ "suspend" Exec sleep 1; xset dpms force suspend
+	+ "off" Exec sleep 1; xset dpms force off
+
+DestroyMenu MenuRearrange
+AddToMenu MenuRearrange
+	+ "one column" PipeRead 'bash $[mtp_scripts]/rearrange-one-column $[vp.width] $[vp.height]'
+	+ "two columns" PipeRead 'bash $[mtp_scripts]/rearrange-two-columns $[vp.width] $[vp.height]'
+	+ "three columns" PipeRead 'bash $[mtp_scripts]/rearrange-three-columns $[vp.width] $[vp.height]'
+	+ "four columns" PipeRead 'bash $[mtp_scripts]/rearrange-four-columns $[vp.width] $[vp.height]'
+
+DestroyFunc Restart
+AddToFunc Restart
+	+ I All (Iconic) Iconify off
+	+ I Restart
+
+
+
+##
+## XSwitchRes (http://www.magwag.plus.com/jim/xswitchres.html)
+##
+
+DestroyMenu MenuResolution
+AddToMenu MenuResolution
+	+ "1920 x 1200" Exec xswitchres 1920x1200
+	+ "1280 x 1024" Exec xswitchres 1280x1024
+	+ "1280 x 960" Exec xswitchres 1280x960
+	+ "1024 x 768" Exec xswitchres 1024x768
+	+ "800 x 600" Exec xswitchres 800x600
+	+ "640 x 512" Exec xswitchres 640x512
+	+ "640 x 480" Exec xswitchres 640x480
+	+ "512 x 384" Exec xswitchres 512x384
+	+ "400 x 300" Exec xswitchres 400x300
+	+ "320 x 240" Exec xswitchres 320x240
+#	 + "1920 x 1200" Exec xrandr -s 1920x1200
+#	 + "1280 x 1024" Exec xrandr -s 1280x1024
+#	 + "1280 x 960" Exec xrandr -s 1280x960
+#	 + "1024 x 768" Exec xrandr -s 1024x768
+#	 + "800 x 600" Exec xrandr -s 800x600
+#	 + "640 x 512" Exec xrandr -s 640x512
+#	 + "640 x 480" Exec xrandr -s 640x480
+#	 + "512 x 384" Exec xrandr -s 512x384
+#	 + "400 x 300" Exec xrandr -s 400x300
+#	 + "320 x 240" Exec xrandr -s 320x240
+
+
+
+##
+## xcompmgr (http://www.freedesktop.org/wiki/Software/xapps)
+##
+
+DestroyMenu MenuXcompmgr
+AddToMenu MenuXcompmgr
+	+ "enable" Exec bash $[mtp_scripts]/xcompmgr-enable $[mtp_scripts]
+	+ "disable" Exec bash $[mtp_scripts]/xcompmgr-disable $[mtp_scripts]
+
+
+
+##
+## Exit?
+##
+
+DestroyMenu MenuExit
+AddToMenu MenuExit "exit?"
+	+ "" Nop
+	+ "no" Nop
+	+ "yes" Quit
+

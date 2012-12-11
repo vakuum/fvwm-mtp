@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ "$1" == "" ]
+then
+	exit 1
+fi
+
+MTP_SCRIPTS="$1"
+XCOMPMGR_IS_ENABLED="$MTP_SCRIPTS/XCOMPMGR_IS_ENABLED"
+
+rm "$XCOMPMGR_IS_ENABLED"
+
+bash "$MTP_SCRIPTS/xcompmgr-stop" "$MTP_SCRIPTS"
+

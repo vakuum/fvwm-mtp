@@ -1,0 +1,20 @@
+##
+## See INSTALL, README and CUSTOMIZE for more information.
+##
+
+Mouse 1 R A Menu MenuMain Nop
+Mouse 1 T A RaiseMoveWindow
+Mouse 2 T A ShadeWindow
+Mouse 1 WDTSF 4 MoveWindow
+Mouse 2 WDTSF 4 ResizeWindow
+Mouse 1 SF A ResizeWindow
+Mouse 2 R A WindowList (!Desk*) NoCurrentDeskTitle, NoHotkeys
+Mouse 1 1 A Close
+Mouse 2 1 A Delete
+Mouse 3 1 A Destroy
+Mouse 1 2 A Maximize
+Mouse 1 4 A Thumbnail
+Mouse 1 6 A Menu WindowOptions
+Mouse 3 WDTSF 4 Menu WindowOptions
+Mouse 1 I A Iconify off
+

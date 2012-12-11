@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ps ax | grep -v grep | grep -v xcompmgr- | grep -q xcompmgr
+if [ "$?" == "1" ]
+then
+	# xcompmgr is not running.
+	exit 0
+fi
+
+killall xcompmgr
+

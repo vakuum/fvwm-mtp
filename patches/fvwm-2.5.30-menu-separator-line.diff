@@ -1,0 +1,25 @@
+diff -Nur fvwm-2.5.30-original/fvwm/menuitem.c fvwm-2.5.30/fvwm/menuitem.c
+--- fvwm-2.5.30-original/fvwm/menuitem.c	2009-05-17 22:47:51.000000000 +0200
++++ fvwm-2.5.30/fvwm/menuitem.c	2011-12-26 17:11:22.000000000 +0100
+@@ -85,7 +85,6 @@
+ 	Window w, GC TopGC, GC BottomGC, int x1, int y, int x2)
+ {
+ 	XDrawLine(dpy, w, TopGC   , x1,   y,   x2,   y);
+-	XDrawLine(dpy, w, BottomGC, x1-1, y+1, x2+1, y+1);
+ 
+ 	return;
+ }
+diff -Nur fvwm-2.5.30-original/libs/defaults.h fvwm-2.5.30/libs/defaults.h
+--- fvwm-2.5.30-original/libs/defaults.h	2009-08-02 16:58:46.000000000 +0200
++++ fvwm-2.5.30/libs/defaults.h	2011-12-26 17:11:22.000000000 +0100
+@@ -69,8 +69,8 @@
+ #define MENU_UNDERLINE_HEIGHT  (MENU_UNDERLINE_THICKNESS + MENU_UNDERLINE_GAP)
+ /*   menu separator parameters */
+ #define MENU_SEPARATOR_SHORT_X_OFFSET      5 /* pixels */
+-#define MENU_SEPARATOR_Y_OFFSET            2 /* pixels */
+-#define MENU_SEPARATOR_HEIGHT              2 /* pixels */
++#define MENU_SEPARATOR_Y_OFFSET            1 /* pixels */
++#define MENU_SEPARATOR_HEIGHT              1 /* pixels */
+ #define MENU_SEPARATOR_TOTAL_HEIGHT    \
+           (MENU_SEPARATOR_HEIGHT + MENU_SEPARATOR_Y_OFFSET)
+ /*   menu tear off bar parameters */

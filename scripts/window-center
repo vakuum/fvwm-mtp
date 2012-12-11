@@ -1,0 +1,31 @@
+#!/bin/bash
+
+x=$1
+y=$2
+
+width=$3
+height=$4
+
+viewport_width=$5
+viewport_height=$6
+
+pager_x=$7
+pager_y=$8
+
+# Centered window position
+center_x=$(( $viewport_width / 2 - $width / 2 ))
+center_y=$(( $viewport_height / 2 - $height / 2 ))
+
+# Window pager position
+windowpager_x=$(( ($x + $pager_x * $viewport_width) / $viewport_width ))
+windowpager_y=$(( ($y + $pager_y * $viewport_height) / $viewport_height ))
+
+# Absolute window position
+absolute_x=$(( $x - (($windowpager_x - $pager_x) * $viewport_width) ))
+absolute_y=$(( $y - (($windowpager_y - $pager_y) * $viewport_height) ))
+
+move_x=$(( $center_x - absolute_x ))
+move_y=$(( $center_y - absolute_y ))
+
+echo "Move w${move_x}p w${move_y}p"
+

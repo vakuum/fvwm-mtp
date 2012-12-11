@@ -1,0 +1,204 @@
+1. Get the Mixed Theme Package from:
+
+    http://www.vakuumverpackt.de/fvwm/
+
+
+2. Make a backup of your current .fvwm2rc configuration file:
+
+    $ cd
+    $ mv -i .fvwm2rc .fvwm2rc-backup
+
+
+3. Extract the package into the .fvwm directory:
+
+    $ bash --version
+    GNU bash, version 4.1.5(1)-release (i486-pc-linux-gnu)
+
+    $ wget --version
+    GNU Wget 1.12 built on linux-gnu.
+
+    $ cd
+    $ mkdir .fvwm
+    $ cd .fvwm
+    $ wget http://www.vakuumverpackt.de/fvwm/MixedThemePackage-0.6.tar.gz
+    $ tar -zxvf MixedThemePackage-0.6.tar.gz
+    $ ln -s -f MixedThemePackage-0.6 MixedThemePackage
+
+
+4. Convert the wallpapers to PNG:
+
+    $ convert --version
+    Version: ImageMagick 6.6.0-4 2010-11-16 Q16 http://www.imagemagick.org
+
+    $ cd ~/.fvwm/MixedThemePackage/themes
+    $ find * -name 'wallpaper*.jpg' -print -exec convert -set filename:name "%d/%t" {} %[filename:name].png \;
+
+
+5. Get the wallpapers for the green stripes and grey stripes theme from LouieMantia.com:
+
+    $ unzip -v
+    UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
+
+    $ cd
+    $ mkdir LouieMantia.com
+    $ cd LouieMantia.com
+    $ wget http://www.louiemantia.com/files/desktops/sgwa_w.zip
+    $ unzip sgwa_w.zip
+
+    Create the wallpaper of the green stripes theme:
+
+    $ mkdir greenstripes
+    $ cd greenstripes
+    $ cp "../SG Wall/SG Striped Wallpaper #11.jpg" wallpaper-1920x1200.jpg
+    $ convert wallpaper-1920x1200.jpg wallpaper-1920x1200.png
+    $ convert -filter cubic -resize 1280x1024! wallpaper-1920x1200.png wallpaper-1280x1024.png
+    $ mv -i wallpaper*.png ~/.fvwm/MixedThemePackage/themes/greenstripes/images/
+    $ cd ..
+
+    Create the wallpaper of the grey stripes theme:
+
+    $ mkdir greystripes
+    $ cd greystripes
+    $ cp "../SG Wall/SG Striped Wallpaper #14.jpg" wallpaper-1920x1200.jpg
+    $ convert wallpaper-1920x1200.jpg wallpaper-1920x1200.png
+    $ convert -filter cubic -resize 1280x1024! wallpaper-1920x1200.png wallpaper-1280x1024.png
+    $ mv -i wallpaper*.png ~/.fvwm/MixedThemePackage/themes/greystripes/images/
+    $ cd ..
+
+    Cleaning up:
+
+    $ rm -rf "SG Wall" "__MACOSX" greenstripes greystripes
+
+
+6. Create a symbolic link to select a theme.
+
+    If you prefer the air1 theme then create the following link:
+
+        1280x1024:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/air1-1280x1024.fvwm ~/.fvwm2rc
+
+        1920x1200:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/air1-1920x1200.fvwm ~/.fvwm2rc
+
+    For the air2 theme:
+
+        1280x1024, 1920x1200:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/air2.fvwm ~/.fvwm2rc
+
+    For the blue theme:
+
+        1280x1024:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/blue.fvwm ~/.fvwm2rc
+
+    For the blue stripes theme:
+
+        1280x1024:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/bluestripes-1280x1024.fvwm ~/.fvwm2rc
+
+        1920x1200:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/bluestripes-1920x1200.fvwm ~/.fvwm2rc
+
+    For the cable theme:
+
+        1280x1024:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/cable-1280x1024.fvwm ~/.fvwm2rc
+
+        1920x1200:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/cable-1920x1200.fvwm ~/.fvwm2rc
+
+    For the deer theme:
+
+        1280x1024:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/deer.fvwm ~/.fvwm2rc
+
+    For the elegant stripes theme:
+
+        1280x1024, 1920x1200:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/elegantstripes.fvwm ~/.fvwm2rc
+
+    For the green theme:
+
+        1280x1024:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/green.fvwm ~/.fvwm2rc
+
+    For the green stripes theme:
+
+        1280x1024:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/greenstripes-1280x1024.fvwm ~/.fvwm2rc
+
+        1920x1200:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/greenstripes-1920x1200.fvwm ~/.fvwm2rc
+
+    For the grey stripes theme:
+
+        1280x1024:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/greystripes-1280x1024.fvwm ~/.fvwm2rc
+
+        1920x1200:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/greystripes-1920x1200.fvwm ~/.fvwm2rc
+
+    For the meadow theme:
+
+        1280x1024:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/meadow.fvwm ~/.fvwm2rc
+
+    For the orange theme:
+
+        1280x1024:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/orange.fvwm ~/.fvwm2rc
+
+    For the pink theme:
+
+        1280x1024:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/pink-1280x1024.fvwm ~/.fvwm2rc
+
+        1920x1200:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/pink-1920x1200.fvwm ~/.fvwm2rc
+
+    For the waiting room theme:
+
+        1280x1024:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/waitingroom-1280x1024.fvwm ~/.fvwm2rc
+
+        1920x1200:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/waitingroom-1920x1200.fvwm ~/.fvwm2rc
+
+    For the wheat theme:
+
+        1280x1024:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/wheat-1280x1024.fvwm ~/.fvwm2rc
+
+        1920x1200:
+
+            $ ln -s ~/.fvwm/MixedThemePackage/wheat-1920x1200.fvwm ~/.fvwm2rc
+
+
+7. Start X and FVWM:
+
+    $ startx
+
+
+8. Enjoy! :-)
+

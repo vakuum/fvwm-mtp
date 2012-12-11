@@ -1,0 +1,27 @@
+##
+## See INSTALL, README and CUSTOMIZE for more information.
+##
+
+DestroyMenu MenuApplication
+AddToMenu MenuApplication
+	+ "net" Popup MenuNet
+	+ "media" Popup MenuMedia
+	+ "" Nop
+	+ "fvwmconsole" Module FvwmConsole
+
+DestroyMenu MenuNet
+AddToMenu MenuNet
+	+ "firefox" Exec firefox
+	+ "liferea" Exec liferea
+	+ "xchat" Exec xchat
+	+ "pidgin" Exec pidgin
+
+DestroyMenu MenuMedia
+AddToMenu MenuMedia
+	+ "xmms" Exec xmms
+	+ "gimp" Exec gimp
+	+ "blender" Exec blender
+	+ "mplayer" Exec gmplayer
+	+ "wings3d" Exec wings3d
+	+ "inkscape" Exec inkscape
+

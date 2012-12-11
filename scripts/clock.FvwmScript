@@ -1,0 +1,65 @@
+WindowTitle {clock.FvwmScript}
+WindowSize 200 100
+
+
+
+Init
+Begin
+	Set $color = (GetScriptArgument 1)
+	Set $font = (GetScriptArgument 2)
+	Set $fontdate = (GetScriptArgument 3)
+
+	ChangeFont 1 $font
+	ChangeFont 2 $fontdate
+
+	ChangeColorset 0 $color
+	ChangeColorset 1 $color
+	ChangeColorset 2 $color
+
+	SendSignal 1 1001
+	SendSignal 2 1001
+End
+
+
+
+PeriodicTasks
+Begin
+	If (RemainderOfDiv (GetTime) 10) == 0 Then
+	Begin
+		SendSignal 1 1001
+		SendSignal 2 1001
+	End
+End
+
+
+
+Widget 1
+Property
+	Type ItemDraw
+	Size 200 34
+	Position 0 26
+	Flags Center NoReliefString
+Main
+	Case message of
+	1001 :
+	Begin
+		ChangeTitle 1 (GetOutput {exec date +%H:%M} 0 -1)
+	End
+End
+
+
+
+Widget 2
+Property
+	Type ItemDraw
+	Size 200 20
+	Position 0 65
+	Flags Center NoReliefString
+Main
+	Case message of
+	1001 :
+	Begin
+		ChangeTitle 2 (GetOutput {exec date +"%a %b %-d"} 0 -1)
+	End
+End
+

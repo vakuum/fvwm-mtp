@@ -1,0 +1,68 @@
+The Mixed Theme Package has the following directory structure:
+
+        MixedThemePackage
+        |-- customize
+        |-- images
+        |-- patches
+        |-- scripts
+        |-- themes
+        |   |-- air1
+        |   |   `-- images
+        |   |-- air2
+        |   |   `-- images
+        .   .
+        .   .
+        .   .
+        |   |-- waitingroom
+        |   |   `-- images
+        |   `-- wheat
+        |       `-- images
+        `-- tmp
+
+You can customize the package to your own needs by editing the
+configuration files under the customize directory. These files
+are described next. You should also consult the manual page of
+FVWM if you want to understand the configuration in detail.
+
+AutoHide.fvwm
+        The AutoHide handler allows you to automatically hide
+        a window after it loses the focus. For more details
+        see the following FAQ entry:
+
+        http://www.fvwm.org/documentation/faq/#7.17
+
+Fonts.fvwm
+        This file specifies the font style and font size.
+
+KeyBindings.fvwm, MouseBindings.fvwm
+        Edit this files if you want to change the key or mouse
+        bindings.
+
+MenuApplication.fvwm
+        The menu structure of the applications menu is defined
+        in this file. Edit this file if you want to modify the
+        application menu.
+
+StartFunction.fvwm
+        The StartFunction can be used to start applications or
+        modules on FVWMs start up.
+
+Style.fvwm
+        This file controls the appearance of the applications.
+
+WindowPlacement.fvwm
+        The WindowPlacementHandler function is called whenever
+        a new window pops up. So this function can be used to
+        perform additional actions on a newly popped up window.
+        Please see the following FAQ entry for more details:
+
+        http://www.fvwm.org/documentation/faq/#3.18
+
+
+The color scheme of a theme is defined in Colorset.fvwm. This
+file is located in the directory of the theme. For the orange
+theme the Colorset.fvwm can be found in the directory themes/
+orange.
+
+Everything else is configured in the file themes/Base.fvwm.
+

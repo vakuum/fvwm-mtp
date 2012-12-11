@@ -1,0 +1,22 @@
+##
+## See INSTALL, README and CUSTOMIZE for more information.
+##
+
+SetEnv mtp_font "Bitstream Vera Sans"
+SetEnv mtp_font_size 11
+
+SetEnv mtp_font_title "Bitstream Vera Sans"
+SetEnv mtp_font_title_size 11
+
+SetEnv mtp_font_menu "Bitstream Vera Sans"
+SetEnv mtp_font_menu_size 11
+
+SetEnv mtp_font_mono "Bitstream Vera Sans Mono"
+SetEnv mtp_font_mono_size 11
+
+SetEnv mtp_font_clock "Bitstream Vera Sans Mono"
+SetEnv mtp_font_clock_size 32
+
+SetEnv mtp_font_date "Bitstream Vera Sans Mono"
+SetEnv mtp_font_date_size 16
+

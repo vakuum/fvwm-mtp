@@ -1,0 +1,19 @@
+##
+## See INSTALL, README and CUSTOMIZE for more information.
+##
+
+SetEnv theme_name pink
+
+SetEnv theme_menu_font "Bitstream Vera Sans:style=Bold"
+SetEnv theme_menu_font_size 11
+SetEnv theme_menu_separators_off 1
+
+SetEnv theme_title_font "Bitstream Vera Sans:style=Bold"
+SetEnv theme_title_font_size 11
+SetEnv theme_title_colorset_active 8
+SetEnv theme_title_colorset_inactive 9
+
+UnsetEnv theme_auto_hide_steps
+
+Read MixedThemePackage/themes/Base.fvwm
+
