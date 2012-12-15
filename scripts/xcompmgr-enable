@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if [ "$1" == "" ]
+scripts="$1"
+if [ "$scripts" == "" ]
 then
 	exit 1
 fi
 
-scripts="$1"
 enabled="$scripts/XCOMPMGR_IS_ENABLED"
 
 touch "$enabled"
