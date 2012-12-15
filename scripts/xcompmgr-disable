@@ -5,13 +5,13 @@ then
 	exit 1
 fi
 
-MTP_SCRIPTS="$1"
-XCOMPMGR_IS_ENABLED="$MTP_SCRIPTS/XCOMPMGR_IS_ENABLED"
+scripts="$1"
+enabled="$scripts/XCOMPMGR_IS_ENABLED"
 
-if [ -f "$XCOMPMGR_IS_ENABLED" ]
+if [ -f "$enabled" ]
 then
-	rm "$XCOMPMGR_IS_ENABLED"
+	rm "$enabled"
 fi
 
-bash "$MTP_SCRIPTS/xcompmgr-stop" "$MTP_SCRIPTS"
+bash "$scripts/xcompmgr-stop" "$scripts"
 
