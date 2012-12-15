@@ -2,7 +2,6 @@ WindowTitle {clock.FvwmScript}
 WindowSize 200 100
 
 
-
 Init
 Begin
 	Set $color = (GetScriptArgument 1)
@@ -21,7 +20,6 @@ Begin
 End
 
 
-
 PeriodicTasks
 Begin
 	If (RemainderOfDiv (GetTime) 10) == 0 Then
@@ -30,7 +28,6 @@ Begin
 		SendSignal 2 1001
 	End
 End
-
 
 
 Widget 1
@@ -46,7 +43,6 @@ Main
 		ChangeTitle 1 (GetOutput {exec date +%H:%M} 0 -1)
 	End
 End
-
 
 
 Widget 2
