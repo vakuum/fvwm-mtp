@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ps ax | grep -v grep | grep -v xcompmgr- | grep -q xcompmgr
+ps ax | grep -q '[x]compmgr[^-]'
 if [ "$?" == "1" ]
 then
 	# xcompmgr is not running.
