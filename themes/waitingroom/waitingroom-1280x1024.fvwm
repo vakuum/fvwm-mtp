@@ -1,0 +1,3 @@
+SetEnv theme_wallpaper wallpaper-1280x1024.png
+Read MixedThemePackage/themes/waitingroom/waitingroom.fvwm
+
