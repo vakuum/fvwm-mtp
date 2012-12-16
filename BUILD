@@ -67,7 +67,6 @@ xcompmgr 1.1.5
 	$ ./configure --prefix=/opt/xcompmgr-1.1.5
 	$ make
 	$ make install
-	$ rm /opt/xcompmgr
 	$ ln -s /opt/xcompmgr-1.1.5 /opt/xcompmgr
 
 	Finally, add /opt/xcompmgr/bin to your PATH.
