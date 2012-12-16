@@ -1,6 +1,6 @@
-diff -Nur fvwm-2.5.30-original/fvwm/menuitem.c fvwm-2.5.30/fvwm/menuitem.c
---- fvwm-2.5.30-original/fvwm/menuitem.c	2009-05-17 22:47:51.000000000 +0200
-+++ fvwm-2.5.30/fvwm/menuitem.c	2011-12-26 17:11:22.000000000 +0100
+diff -Nur fvwm-2.6-original/fvwm/menuitem.c fvwm-2.6/fvwm/menuitem.c
+--- fvwm-2.6-original/fvwm/menuitem.c
++++ fvwm-2.6/fvwm/menuitem.c
 @@ -85,7 +85,6 @@
  	Window w, GC TopGC, GC BottomGC, int x1, int y, int x2)
  {
@@ -9,9 +9,9 @@ diff -Nur fvwm-2.5.30-original/fvwm/menuitem.c fvwm-2.5.30/fvwm/menuitem.c
  
  	return;
  }
-diff -Nur fvwm-2.5.30-original/libs/defaults.h fvwm-2.5.30/libs/defaults.h
---- fvwm-2.5.30-original/libs/defaults.h	2009-08-02 16:58:46.000000000 +0200
-+++ fvwm-2.5.30/libs/defaults.h	2011-12-26 17:11:22.000000000 +0100
+diff -Nur fvwm-2.6-original/libs/defaults.h fvwm-2.6/libs/defaults.h
+--- fvwm-2.6-original/libs/defaults.h
++++ fvwm-2.6/libs/defaults.h
 @@ -69,8 +69,8 @@
  #define MENU_UNDERLINE_HEIGHT  (MENU_UNDERLINE_THICKNESS + MENU_UNDERLINE_GAP)
  /*   menu separator parameters */
