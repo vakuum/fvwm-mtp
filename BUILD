@@ -57,3 +57,18 @@ FVWM 2.5.26
 
 	Finally, add /opt/fvwm/bin to your PATH.
 
+
+xcompmgr 1.1.5
+
+	$ umask 0022
+	$ wget http://xorg.freedesktop.org/archive/individual/app/xcompmgr-1.1.5.tar.bz2
+	$ tar -jxvf xcompmgr-1.1.5.tar.bz2
+	$ cd xcompmgr-1.1.5
+	$ ./configure --prefix=/opt/xcompmgr-1.1.5
+	$ make
+	$ make install
+	$ rm /opt/xcompmgr
+	$ ln -s /opt/xcompmgr-1.1.5 /opt/xcompmgr
+
+	Finally, add /opt/xcompmgr/bin to your PATH.
+
