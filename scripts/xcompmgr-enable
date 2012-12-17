@@ -7,6 +7,10 @@ then
 fi
 
 enabled="$scripts/XCOMPMGR_IS_ENABLED"
+if [ ! -f "$enabled" ]
+then
+	touch "$enabled"
+fi
 
 touch "$enabled"
 
