@@ -1,9 +1,9 @@
 #!/bin/bash
 
-ps ax | grep -q '[x]compmgr[^-]'
+ps ax | grep -q '[c]ompton[^-]'
 if [ "$?" == "0" ]
 then
-	# xcompmgr is already running.
+	# compton is already running.
 	exit 0
 fi
 
@@ -19,5 +19,5 @@ then
 	exit 0
 fi
 
-xcompmgr -c -C -r7 -l-10 -t-10 -o.75 &
+compton -G -c -C -r7 -l-10 -t-10 -o.75 &
 

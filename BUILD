@@ -58,6 +58,17 @@ FVWM 2.5.26
 	Finally, add /opt/fvwm/bin to your PATH.
 
 
+compton
+
+	$ umask 0022
+	$ git clone https://github.com/chjj/compton.git
+	$ cd compton
+	$ make NO_REGEX_PCRE=1
+	$ make install PREFIX=/opt/compton
+
+	Finally, add /opt/compton/bin to your PATH.
+
+
 xcompmgr 1.1.5
 
 	$ umask 0022

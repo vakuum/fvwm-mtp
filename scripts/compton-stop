@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ps ax | grep -q '[c]ompton[^-]'
+if [ "$?" == "1" ]
+then
+	# compton is not running.
+	exit 0
+fi
+
+killall compton
+

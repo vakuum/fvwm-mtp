@@ -1,0 +1,24 @@
+#!/bin/bash
+
+scripts="$1"
+if [ "$scripts" == "" ]
+then
+	exit 1
+fi
+
+enabled="$scripts/EFFECTS_ARE_ENABLED"
+if [ ! -f "$enabled" ]
+then
+	touch "$enabled"
+fi
+
+which compton > /dev/null
+if [ "$?" == "0" ]
+then
+	start="compton-start"
+else
+	start="xcompmgr-start"
+fi
+
+bash "$scripts/$start" "$scripts"
+

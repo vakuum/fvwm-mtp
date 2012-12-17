@@ -72,7 +72,7 @@ AddToMenu MenuMain
 	+ "dpms" Popup MenuDpms
 	+ "rearrange" Popup MenuRearrange
 	+ "resolution" Popup MenuResolution
-	+ "xcompmgr" Popup MenuXcompmgr
+	+ "effects" Popup MenuEffects
 	+ "" Nop
 	+ "restart" Function Restart
 	+ "exit" Menu MenuExit
@@ -127,13 +127,13 @@ AddToMenu MenuResolution
 
 
 ##
-## xcompmgr (http://www.freedesktop.org/wiki/Software/xapps)
+## Effects
 ##
 
-DestroyMenu MenuXcompmgr
-AddToMenu MenuXcompmgr
-	+ "enable" Exec bash $[mtp_scripts]/xcompmgr-enable $[mtp_scripts]
-	+ "disable" Exec bash $[mtp_scripts]/xcompmgr-disable $[mtp_scripts]
+DestroyMenu MenuEffects
+AddToMenu MenuEffects
+	+ "enable" Exec bash $[mtp_scripts]/effects-enable $[mtp_scripts]
+	+ "disable" Exec bash $[mtp_scripts]/effects-disable $[mtp_scripts]
 
 
 
