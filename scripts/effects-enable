@@ -12,13 +12,6 @@ then
 	touch "$enabled"
 fi
 
-which compton > /dev/null
-if [ "$?" == "0" ]
-then
-	start="compton-start"
-else
-	start="xcompmgr-start"
-fi
-
+source "$scripts/effects"
 bash "$scripts/$start" "$scripts"
 

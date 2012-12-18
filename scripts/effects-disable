@@ -12,13 +12,6 @@ then
 	rm "$enabled"
 fi
 
-which compton > /dev/null
-if [ "$?" == "0" ]
-then
-	stop="compton-stop"
-else
-	stop="xcompmgr-stop"
-fi
-
+source "$scripts/effects"
 bash "$scripts/$stop" "$scripts"
 

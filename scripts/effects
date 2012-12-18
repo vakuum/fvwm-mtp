@@ -1,0 +1,12 @@
+#!/bin/bash
+
+start="xcompmgr-start"
+stop="xcompmgr-stop"
+
+which compton > /dev/null
+if [ "$?" == "0" ]
+then
+	start="compton-start"
+	stop="compton-stop"
+fi
+
