@@ -3,7 +3,7 @@ compton
 	$ umask 0022
 	$ git clone https://github.com/chjj/compton.git
 	$ cd compton
-	$ make NO_REGEX_PCRE=1
+	$ make
 	$ make install PREFIX=/opt/compton
 
 	Finally, add /opt/compton/bin to your PATH.
