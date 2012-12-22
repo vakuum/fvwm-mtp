@@ -9,38 +9,38 @@ Key F4 A M GotoPage 0 1
 Key F5 A M GotoPage 1 1
 Key F6 A M GotoPage 2 1
 
-Key Insert A 4 GotoPage 0 0
-Key Home A 4 GotoPage 1 0
-Key Page_Up A 4 GotoPage 2 0
-Key Delete A 4 GotoPage 0 1
-Key End A 4 GotoPage 1 1
+Key Insert    A 4 GotoPage 0 0
+Key Home      A 4 GotoPage 1 0
+Key Page_Up   A 4 GotoPage 2 0
+Key Delete    A 4 GotoPage 0 1
+Key End       A 4 GotoPage 1 1
 Key Page_Down A 4 GotoPage 2 1
 
-Key F A 4 Maximize 100 100
+Key F      A 4 Maximize 100 100
 Key Return A 4 Maximize 100 100
 
 Key Tab A M WindowList (CurrentPage !Desk*) CurrentAtEnd, NoCurrentDeskTitle, NoHotkeys
 
-Key Left WDTSF 4 ResizeMove frame 50 100 0 0
+Key Left  WDTSF 4 ResizeMove frame 50 100 0 0
 Key Right WDTSF 4 ResizeMove frame 50 100 -0 -0
 
-Key Up WDTSF 4 ResizeMove frame 100 50 0 0
-Key Down WDTSF 4 ResizeMove frame 100 50 -0 -0
+Key Up    WDTSF 4 ResizeMove frame 100 50 0 0
+Key Down  WDTSF 4 ResizeMove frame 100 50 -0 -0
 
 Key Pause WTSF1246 N Thumbnail
 
-Key KP_Add WTSF1246 N WindowSizeIncrease
+Key KP_Add      WTSF1246 N WindowSizeIncrease
 Key KP_Subtract WTSF1246 N WindowSizeDecrease
 
-Key KP_Home WTSF1246 N WindowTopLeft
-Key KP_Up WTSF1246 N WindowTopCenter
+Key KP_Home  WTSF1246 N WindowTopLeft
+Key KP_Up    WTSF1246 N WindowTopCenter
 Key KP_Prior WTSF1246 N WindowTopRight
 
-Key KP_Left WTSF1246 N WindowMiddleLeft
+Key KP_Left  WTSF1246 N WindowMiddleLeft
 Key KP_Begin WTSF1246 N WindowMiddleCenter
 Key KP_Right WTSF1246 N WindowMiddleRight
 
-Key KP_End WTSF1246 N WindowBottomLeft
+Key KP_End  WTSF1246 N WindowBottomLeft
 Key KP_Down WTSF1246 N WindowBottomCenter
 Key KP_Next WTSF1246 N WindowBottomRight
 
