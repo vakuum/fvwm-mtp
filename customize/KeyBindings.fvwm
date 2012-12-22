@@ -16,10 +16,16 @@ Key Delete A 4 GotoPage 0 1
 Key End A 4 GotoPage 1 1
 Key Page_Down A 4 GotoPage 2 1
 
+Key F A 4 Maximize 100 100
+Key Return A 4 Maximize 100 100
+
 Key Tab A M WindowList (CurrentPage !Desk*) CurrentAtEnd, NoCurrentDeskTitle, NoHotkeys
 
-Key Up WDTSF 4 Maximize 0 100
-Key Right WDTSF 4 Maximize 100 0
+Key Left WDTSF 4 ResizeMove frame 50 100 0 0
+Key Right WDTSF 4 ResizeMove frame 50 100 -0 -0
+
+Key Up WDTSF 4 ResizeMove frame 100 50 0 0
+Key Down WDTSF 4 ResizeMove frame 100 50 -0 -0
 
 Key Pause WTSF1246 N Thumbnail
 
