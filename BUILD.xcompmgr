@@ -1,3 +1,21 @@
+xcompmgr 1.1.6
+
+	https://bugs.freedesktop.org/show_bug.cgi?id=46285
+
+	$ umask 0022
+	$ wget http://xorg.freedesktop.org/archive/individual/app/xcompmgr-1.1.6.tar.bz2
+	$ tar -jxvf xcompmgr-1.1.6.tar.bz2
+	$ cd xcompmgr-1.1.6
+	$ wget https://bugs.freedesktop.org/attachment.cgi?id=65447 -O xcompmgr-1.1.6.patch
+	$ patch -p0 < xcompmgr-1.1.6.patch
+	$ ./configure --prefix=/opt/xcompmgr-1.1.6
+	$ make
+	$ make install
+	$ ln -s /opt/xcompmgr-1.1.6 /opt/xcompmgr
+
+	Finally, add /opt/xcompmgr/bin to your PATH.
+
+
 xcompmgr 1.1.5
 
 	$ umask 0022
