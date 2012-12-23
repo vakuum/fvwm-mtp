@@ -70,129 +70,17 @@
     $ rm -rf "SG Wall" "__MACOSX" greenstripes greystripes
 
 
-6. Create a symbolic link to select a theme.
+6. Select a theme.
 
-    If you prefer the air1 theme then create the following link:
+    Create a link to .fvwm2rc:
 
-        1280x1024:
+        $ ln -s ~/.fvwm/MixedThemePackage/.fvwm2rc ~/.fvwm2rc
 
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/air1/air1-1280x1024.fvwm ~/.fvwm2rc
+    Select a theme in .fvwm2rc:
 
-        1920x1200:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/air1/air1-1920x1200.fvwm ~/.fvwm2rc
-
-    For the air2 theme:
-
-        1280x1024, 1920x1200:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/air2/air2.fvwm ~/.fvwm2rc
-
-    For the blue theme:
-
-        1280x1024:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/blue/blue.fvwm ~/.fvwm2rc
-
-    For the blue stripes theme:
-
-        1280x1024:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/bluestripes/bluestripes-1280x1024.fvwm ~/.fvwm2rc
-
-        1920x1200:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/bluestripes/bluestripes-1920x1200.fvwm ~/.fvwm2rc
-
-    For the cable theme:
-
-        1280x1024:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/cable/cable-1280x1024.fvwm ~/.fvwm2rc
-
-        1920x1200:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/cable/cable-1920x1200.fvwm ~/.fvwm2rc
-
-    For the deer theme:
-
-        1280x1024:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/deer/deer.fvwm ~/.fvwm2rc
-
-    For the elegant stripes theme:
-
-        1280x1024, 1920x1200:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/elegantstripes/elegantstripes.fvwm ~/.fvwm2rc
-
-    For the green theme:
-
-        1280x1024:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/green/green.fvwm ~/.fvwm2rc
-
-    For the green stripes theme:
-
-        1280x1024:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/greenstripes/greenstripes-1280x1024.fvwm ~/.fvwm2rc
-
-        1920x1200:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/greenstripes/greenstripes-1920x1200.fvwm ~/.fvwm2rc
-
-    For the grey stripes theme:
-
-        1280x1024:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/greystripes/greystripes-1280x1024.fvwm ~/.fvwm2rc
-
-        1920x1200:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/greystripes/greystripes-1920x1200.fvwm ~/.fvwm2rc
-
-    For the meadow theme:
-
-        1280x1024:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/meadow/meadow.fvwm ~/.fvwm2rc
-
-    For the orange theme:
-
-        1280x1024:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/orange/orange.fvwm ~/.fvwm2rc
-
-    For the pink theme:
-
-        1280x1024:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/pink/pink-1280x1024.fvwm ~/.fvwm2rc
-
-        1920x1200:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/pink/pink-1920x1200.fvwm ~/.fvwm2rc
-
-    For the waiting room theme:
-
-        1280x1024:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/waitingroom/waitingroom-1280x1024.fvwm ~/.fvwm2rc
-
-        1920x1200:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/waitingroom/waitingroom-1920x1200.fvwm ~/.fvwm2rc
-
-    For the wheat theme:
-
-        1280x1024:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/wheat/wheat-1280x1024.fvwm ~/.fvwm2rc
-
-        1920x1200:
-
-            $ ln -s ~/.fvwm/MixedThemePackage/themes/wheat/wheat-1920x1200.fvwm ~/.fvwm2rc
+        $ vim ~/.fvwm2rc
+        $ cat ~/.fvwm2rc
+        Read MixedThemePackage/themes/wheat/wheat-1920x1200.fvwm
 
 
 7. Start X and FVWM:
