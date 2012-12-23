@@ -111,6 +111,8 @@ Style * SnapAttraction 10 All Screen
 # Window title and Icons
 Style * Colorset 10, HilightColorset 11
 
+CursorStyle Wait watch
+
 Read $[mtp_customize]/Style.fvwm
 
 
