@@ -6,7 +6,7 @@ SetEnv theme_name greystripes
 
 SetEnv theme_menu_font "Bitstream Vera Sans:style=Bold"
 SetEnv theme_menu_font_size 11
-UnsetEnv theme_menu_separators_off
+SetEnv theme_menu_separators_off 1
 
 SetEnv theme_title_font "Bitstream Vera Sans:style=Bold"
 SetEnv theme_title_font_size 11

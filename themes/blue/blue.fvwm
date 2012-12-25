@@ -6,7 +6,7 @@ SetEnv theme_name blue
 
 UnsetEnv theme_menu_font
 UnsetEnv theme_menu_font_size
-UnsetEnv theme_menu_separators_off
+SetEnv theme_menu_separators_off 1
 
 UnsetEnv theme_title_font
 UnsetEnv theme_title_font_size
