@@ -2,6 +2,7 @@
 ## See INSTALL, README and CUSTOMIZE for more information.
 ##
 
+# Navigate
 Key F1 A M GotoPage 0 0
 Key F2 A M GotoPage 1 0
 Key F3 A M GotoPage 2 0
@@ -16,22 +17,22 @@ Key Delete    A 4 GotoPage 0 1
 Key End       A 4 GotoPage 1 1
 Key Page_Down A 4 GotoPage 2 1
 
+# Resize
 Key F      A 4 Maximize 100 100
 Key Return A 4 Maximize 100 100
-
-Key Tab A M WindowList (CurrentPage !Desk*) CurrentAtEnd, NoCurrentDeskTitle, NoHotkeys
-
-Key Left  WDTSF 4 ResizeMove frame 50 100 0 0
-Key Right WDTSF 4 ResizeMove frame 50 100 -0 -0
 
 Key Up    WDTSF 4 ResizeMove frame 100 50 0 0
 Key Down  WDTSF 4 ResizeMove frame 100 50 -0 -0
 
-Key Pause WTSF1246 N Thumbnail
+Key Left  WDTSF 4 ResizeMove frame 50 100 0 0
+Key Right WDTSF 4 ResizeMove frame 50 100 -0 -0
 
 Key KP_Add      WTSF1246 N WindowSizeIncrease
 Key KP_Subtract WTSF1246 N WindowSizeDecrease
 
+Key KP_Insert A N ResizeMove frame 1280p 1024p 50-50w 50-50w
+
+# Move
 Key KP_Home  WTSF1246 N WindowTopLeft
 Key KP_Up    WTSF1246 N WindowTopCenter
 Key KP_Prior WTSF1246 N WindowTopRight
@@ -44,9 +45,12 @@ Key KP_End  WTSF1246 N WindowBottomLeft
 Key KP_Down WTSF1246 N WindowBottomCenter
 Key KP_Next WTSF1246 N WindowBottomRight
 
-Key KP_Insert A N ResizeMove frame 1280p 1024p 50-50w 50-50w
+Key numbersign A 4 Popup MenuRearrange
+
+#
+Key Tab A M WindowList (CurrentPage !Desk*) CurrentAtEnd, NoCurrentDeskTitle, NoHotkeys
+
+Key Pause WTSF1246 N Thumbnail
 
 Key plus A 4 Xterm
-
-Key numbersign A 4 Popup MenuRearrange
 
