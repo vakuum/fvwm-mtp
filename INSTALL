@@ -20,9 +20,9 @@
     $ cd
     $ mkdir .fvwm
     $ cd .fvwm
-    $ wget http://www.vakuumverpackt.de/fvwm/MixedThemePackage-0.6.tar.gz
-    $ tar -zxvf MixedThemePackage-0.6.tar.gz
-    $ ln -s -f MixedThemePackage-0.6 MixedThemePackage
+    $ wget http://www.vakuumverpackt.de/fvwm/MixedThemePackage-0.8.tar.gz
+    $ tar -zxvf MixedThemePackage-0.8.tar.gz
+    $ ln -s -f MixedThemePackage-0.8 MixedThemePackage
 
 
 4. Convert the wallpapers to PNG:
