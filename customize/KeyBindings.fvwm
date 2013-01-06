@@ -52,7 +52,7 @@ Key Tab A M WindowList (CurrentPage !Desk*) CurrentAtEnd, NoCurrentDeskTitle, No
 
 Key Pause WTSF1246 N Thumbnail
 
-Key plus A 4 Xterm
+Key plus A 4 Terminal
 
 Key Menu A N Popup MenuMain
 

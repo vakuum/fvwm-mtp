@@ -402,12 +402,10 @@ AddToFunc WindowListFunc
 
 
 ##
-## xterm
+## Terminal
 ##
 
-DestroyFunc Xterm
-AddToFunc Xterm
-	+ I Exec xterm -ls -geometry 112x40 -sl 5000 -fa '$[mtp_font_mono]' -fs '$[mtp_font_mono_size]'
+Read $[mtp_customize]/Terminal.fvwm
 
 
 

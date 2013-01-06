@@ -50,6 +50,9 @@ StartFunction.fvwm
 Style.fvwm
         This file controls the appearance of the applications.
 
+Terminal.fvwm
+        This file specifies the default terminal.
+
 WindowPlacement.fvwm
         The WindowPlacementHandler function is called whenever
         a new window pops up. So this function can be used to

@@ -1,0 +1,8 @@
+##
+## See INSTALL, README and CUSTOMIZE for more information.
+##
+
+DestroyFunc Terminal
+AddToFunc Terminal
+	+ I Exec xterm -ls -geometry 140x54 -sl 5000 -fa '$[mtp_font_mono]' -fs '$[mtp_font_mono_size]'
+

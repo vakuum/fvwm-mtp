@@ -65,7 +65,7 @@ AddToMenu MenuDecoration
 
 DestroyMenu MenuMain
 AddToMenu MenuMain
-	+ "xterm" Xterm
+	+ "terminal" Terminal
 	+ "" Nop
 	+ "applications" Popup MenuApplication
 	+ "" Nop
