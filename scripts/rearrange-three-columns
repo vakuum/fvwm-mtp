@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "FvwmRearrange -tile -resize -m -mn 3 0 0 100 100"
+echo "FvwmRearrange -tile -resize -m -mn 3"
 

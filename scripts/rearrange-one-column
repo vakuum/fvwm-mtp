@@ -1,10 +1,4 @@
 #!/bin/bash
 
-viewport_width=$1
-viewport_height=$2
-
-border_left=$(( ($viewport_width - 1024) / 2 ))
-border_right=$(( $viewport_width - $border_left ))
-
-echo "FvwmRearrange -tile -resize -m -mn 1 ${border_left}p 0 ${border_right}p 100"
+echo "FvwmRearrange -tile -resize -m -mn 1"
 
