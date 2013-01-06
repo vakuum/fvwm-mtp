@@ -12,6 +12,11 @@ FVWM 2.6.5
 
 	Finally, add /opt/fvwm/bin to your PATH.
 
+	FVWM 2.6.5 is used by:
+
+	* Fedora 17
+	* Slackware 14.0
+
 
 FVWM 2.6.3
 
@@ -26,6 +31,10 @@ FVWM 2.6.3
 	$ ln -s /opt/fvwm-2.6.3 /opt/fvwm
 
 	Finally, add /opt/fvwm/bin to your PATH.
+
+	FVWM 2.6.3 is used by:
+
+	* openSUSE 12.2
 
 
 FVWM 2.5.30
@@ -42,6 +51,15 @@ FVWM 2.5.30
 
 	Finally, add /opt/fvwm/bin to your PATH.
 
+	FVWM 2.5.30 is used by:
+
+	* Debian 6.0
+	* Fedora 15
+	* Fedora 16
+	* Ubuntu 11.10
+	* Ubuntu 12.04 LTS
+	* Ubuntu 12.10
+
 
 FVWM 2.5.28
 
@@ -57,6 +75,10 @@ FVWM 2.5.28
 
 	Finally, add /opt/fvwm/bin to your PATH.
 
+	FVWM 2.5.28 is used by:
+
+	* Ubuntu 10.04 LTS
+
 
 FVWM 2.5.26
 
@@ -71,4 +93,13 @@ FVWM 2.5.26
 	$ ln -s /opt/fvwm-2.5.26 /opt/fvwm
 
 	Finally, add /opt/fvwm/bin to your PATH.
+
+	FVWM 2.5.26 is used by:
+
+	* Debian 5.0
+	* Fedora 12
+	* Fedora 13
+	* Fedora 14
+	* openSUSE 11.4
+	* openSUSE 12.1
 
