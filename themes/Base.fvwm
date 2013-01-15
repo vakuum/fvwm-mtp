@@ -36,6 +36,7 @@ Mouse 1 FS A -
 Mouse 2 FST A -
 
 DestroyFunc FuncFvwmRaiseLowerX
+DestroyFunc UrgencyFunc
 
 
 
