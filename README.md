@@ -2,6 +2,8 @@
 
 The Mixed Theme Package is a package of themes for the [FVWM](http://www.fvwm.org/) window manager. Currently the package contains ~~two~~ ~~three~~ ~~four~~ ~~nine~~ fifteen themes. Please see http://www.vakuumverpackt.de/fvwm/ for details.
 
+A usability side note: The used screen locker [slock](http://tools.suckless.org/slock) has no interface at all. This means, whenever your screen gets locked and blacked out after five minutes of inactivity, all you have to do is enter your password blindly. After all, the best interface is no interface.
+
 ## Screenshots
 
 ### 1920x1200
