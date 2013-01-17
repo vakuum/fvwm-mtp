@@ -1,8 +1,6 @@
 ## About
 
-The Mixed Theme Package is a package of themes for the [FVWM](http://www.fvwm.org/) window manager. Currently the package contains ~~two~~ ~~three~~ ~~four~~ ~~nine~~ fifteen themes. 
-
-Please see http://www.vakuumverpackt.de/fvwm/ for details.
+The Mixed Theme Package is a package of themes for the [FVWM](http://www.fvwm.org/) window manager. Currently the package contains ~~two~~ ~~three~~ ~~four~~ ~~nine~~ fifteen themes. Please see http://www.vakuumverpackt.de/fvwm/ for details.
 
 ## Screenshots
 
