@@ -30,7 +30,7 @@ Key Right WDTSF 4 ResizeMove frame 50 100 -0 -0
 Key KP_Add      WTSF1246 N WindowSizeIncrease
 Key KP_Subtract WTSF1246 N WindowSizeDecrease
 
-Key KP_Insert A N ResizeMove frame 1280p 1024p 50-50w 50-50w
+Key KP_Insert A N WindowCenterResizeXterm 1280p 1024p
 
 # Move
 Key KP_Home  WTSF1246 N WindowTopLeft
