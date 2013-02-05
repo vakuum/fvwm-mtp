@@ -85,10 +85,10 @@ AddToMenu MenuDpms
 
 DestroyMenu MenuRearrange
 AddToMenu MenuRearrange
-	+ "one column" PipeRead 'bash $[mtp_scripts]/rearrange-one-column $[vp.width] $[vp.height]'
-	+ "two columns" PipeRead 'bash $[mtp_scripts]/rearrange-two-columns $[vp.width] $[vp.height]'
-	+ "three columns" PipeRead 'bash $[mtp_scripts]/rearrange-three-columns $[vp.width] $[vp.height]'
-	+ "four columns" PipeRead 'bash $[mtp_scripts]/rearrange-four-columns $[vp.width] $[vp.height]'
+	+ "one column" FvwmRearrange -tile -resize -m -mn 1
+	+ "two columns" FvwmRearrange -tile -resize -m -mn 2
+	+ "three columns" FvwmRearrange -tile -resize -m -mn 3
+	+ "four columns" FvwmRearrange -tile -resize -m -mn 4
 
 DestroyFunc Restart
 AddToFunc Restart
