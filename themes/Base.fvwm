@@ -299,57 +299,48 @@ AddToFunc WindowSizeDecrease
 
 DestroyFunc WindowTopLeft
 AddToFunc WindowTopLeft
+	+ I ResizeMove frame 50 50 0 0
 	+ I Raise
-	+ I Move 0 0
-#	+ I WarpToWindow 50 50
 
 DestroyFunc WindowTopCenter
 AddToFunc WindowTopCenter
+	+ I ResizeMove frame 100 50 0 0
 	+ I Raise
-	+ I Move 50-50w 0
-#	+ I WarpToWindow 50 50
 
 DestroyFunc WindowTopRight
 AddToFunc WindowTopRight
+	+ I ResizeMove frame 50 50 -0 0
 	+ I Raise
-	+ I Move -0 0
-#	+ I WarpToWindow 50 50
 
 DestroyFunc WindowMiddleLeft
 AddToFunc WindowMiddleLeft
+	+ I ResizeMove frame 50 100 0 0
 	+ I Raise
-	+ I Move 0 50-50w
-#	+ I WarpToWindow 50 50
 
 DestroyFunc WindowMiddleCenter
 AddToFunc WindowMiddleCenter
+	+ I WindowCenterResizeXterm 1280p 1024p
 	+ I Raise
-	+ I Move 50-50w 50-50w
-#	+ I WarpToWindow 50 50
 
 DestroyFunc WindowMiddleRight
 AddToFunc WindowMiddleRight
+	+ I ResizeMove frame 50 100 -0 -0
 	+ I Raise
-	+ I Move -0 50-50w
-#	+ I WarpToWindow 50 50
 
 DestroyFunc WindowBottomLeft
 AddToFunc WindowBottomLeft
-	+ I Move 0 -0
+	+ I ResizeMove frame 50 50 0 -0
 	+ I Raise
-#	+ I WarpToWindow 50 50
 
 DestroyFunc WindowBottomCenter
 AddToFunc WindowBottomCenter
-	+ I Move 50-50w -0
+	+ I ResizeMove frame 100 50 -0 -0
 	+ I Raise
-#	+ I WarpToWindow 50 50
 
 DestroyFunc WindowBottomRight
 AddToFunc WindowBottomRight
-	+ I Move -0 -0
+	+ I ResizeMove frame 50 50 -0 -0p
 	+ I Raise
-#	+ I WarpToWindow 50 50
 
 DestroyFunc WindowPlacementHandler
 AddToFunc WindowPlacementHandler
