@@ -319,7 +319,7 @@ AddToFunc WindowMiddleLeft
 
 DestroyFunc WindowMiddleCenter
 AddToFunc WindowMiddleCenter
-	+ I WindowCenterResizeXterm 1280p 1024p
+	+ I Move 50-50w 50-50w
 	+ I Raise
 
 DestroyFunc WindowMiddleRight
