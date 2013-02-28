@@ -137,18 +137,22 @@ ButtonStyle All -- Flat
 ButtonStyle All -- UseTitleStyle
 
 AddButtonStyle All Vector 2 1x1@4 1x1@4
+
 AddButtonStyle 1 \
 	ActiveUp (Pixmap $[theme_images]/close.png -- Flat) \
 	ActiveDown (Pixmap $[theme_images]/close.png -- Flat) \
 	Inactive (Pixmap $[theme_images]/close.png -- Flat)
+
 AddButtonStyle 2 \
 	ActiveUp (Pixmap $[theme_images]/maximize.png -- Flat) \
 	ActiveDown (Pixmap $[theme_images]/maximize.png -- Flat) \
 	Inactive (Pixmap $[theme_images]/maximize.png -- Flat)
+
 AddButtonStyle 4 \
 	ActiveUp (Pixmap $[theme_images]/iconify.png -- Flat) \
 	ActiveDown (Pixmap $[theme_images]/iconify.png -- Flat) \
 	Inactive (Pixmap $[theme_images]/iconify.png -- Flat)
+
 AddButtonStyle 6 \
 	ActiveUp (Pixmap $[theme_images]/options.png -- Flat) \
 	ActiveDown (Pixmap $[theme_images]/options.png -- Flat) \
