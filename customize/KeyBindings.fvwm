@@ -18,16 +18,16 @@ Key End A 4 GotoPage 1 1
 Key Page_Down A 4 GotoPage 2 1
 
 # Resize
-Key F A 4 Maximize 100 100
-Key Return A 4 Maximize 100 100
+Key F WTSF1246 4 Maximize 100 100
+Key Return WTSF1246 4 Maximize 100 100
 
-Key Up WDTSF 4 Maximize 0 100
-Key Right WDTSF 4 Maximize 100 0
+Key Up WTSF1246 4 Maximize 0 100
+Key Right WTSF1246 4 Maximize 100 0
 
 Key KP_Add WTSF1246 N WindowSizeIncrease
 Key KP_Subtract WTSF1246 N WindowSizeDecrease
 
-Key KP_Insert A N WindowCenterResizeXterm 1280p 1024p
+Key KP_Insert WTSF1246 N WindowCenterResizeXterm 1280p 1024p
 
 # Placement
 Key KP_Home WTSF1246 N WindowTopLeft
