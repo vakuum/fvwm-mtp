@@ -14,9 +14,11 @@ FVWM 2.6.5
 
 	FVWM 2.6.5 is used by:
 
+	* Fedora 19
 	* Fedora 18
 	* Fedora 17
 	* Slackware 14.0
+	* Ubuntu 13.04
 
 
 FVWM 2.6.3
@@ -35,6 +37,7 @@ FVWM 2.6.3
 
 	FVWM 2.6.3 is used by:
 
+	* openSUSE 12.3
 	* openSUSE 12.2
 
 
@@ -54,12 +57,13 @@ FVWM 2.5.30
 
 	FVWM 2.5.30 is used by:
 
+	* Debian 7.0
 	* Debian 6.0
-	* Fedora 15
 	* Fedora 16
-	* Ubuntu 11.10
-	* Ubuntu 12.04 LTS
+	* Fedora 15
 	* Ubuntu 12.10
+	* Ubuntu 12.04 LTS
+	* Ubuntu 11.10
 
 
 FVWM 2.5.28
