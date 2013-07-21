@@ -1,10 +1,21 @@
 #!/bin/bash
 
 class=$1
-x=$2
-y=$3
-width=$4
-height=$5
+width=$2
+height=$3
+
+function decrease {
+	current=$1
+	width=$2
+	height=$3
+	target=$(( ($width + $patch) * ($height + $patch) ))
+
+	if [ $current -gt $target ]
+	then
+		echo "ResizeMove frame ${width}p ${height}p 50-50w 50-50w"
+		exit
+	fi
+}
 
 patch=0
 if [ "$class" = "XTerm" ]
@@ -16,33 +27,10 @@ current=$(( $width * $height ))
 
 echo "Raise"
 
-target=$(( (1280 + $patch) * (1024 + $patch) ))
-if [ $current -gt $target ]
-then
-	echo "ResizeMove frame 1280p 1024p 50-50w 50-50w"
-	exit
-fi
-
-target=$(( (1024 + $patch) * (768 + $patch) ))
-if [ $current -gt $target ]
-then
-	echo "ResizeMove frame 1024p 768p 50-50w 50-50w"
-	exit
-fi
-
-target=$(( (960 + $patch) * (600 + $patch) ))
-if [ $current -gt $target ]
-then
-	echo "ResizeMove frame 960p 600p 50-50w 50-50w"
-	exit
-fi
-
-target=$(( (800 + $patch) * (600 + $patch) ))
-if [ $current -gt $target ]
-then
-	echo "ResizeMove frame 800p 600p 50-50w 50-50w"
-	exit
-fi
+decrease $current 1280 1024
+decrease $current 1024 768
+decrease $current 960 600
+decrease $current 800 600
 
 echo "ResizeMove frame 800p 600p 50-50w 50-50w"
 

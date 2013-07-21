@@ -296,11 +296,11 @@ AddToFunc WindowCenterResizeXterm
 
 DestroyFunc WindowSizeIncrease
 AddToFunc WindowSizeIncrease
-	+ I PipeRead 'bash $[mtp_scripts]/window-size-increase $[w.class] $[w.x] $[w.y] $[w.width] $[w.height]'
+	+ I PipeRead 'bash $[mtp_scripts]/window-size-increase $[w.class] $[w.width] $[w.height]'
 
 DestroyFunc WindowSizeDecrease
 AddToFunc WindowSizeDecrease
-	+ I PipeRead 'bash $[mtp_scripts]/window-size-decrease $[w.class] $[w.x] $[w.y] $[w.width] $[w.height]'
+	+ I PipeRead 'bash $[mtp_scripts]/window-size-decrease $[w.class] $[w.width] $[w.height]'
 
 DestroyFunc WindowTopLeft
 AddToFunc WindowTopLeft
