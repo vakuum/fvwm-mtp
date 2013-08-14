@@ -1,6 +1,6 @@
 ## About
 
-The Mixed Theme Package is a package of themes for the [FVWM](http://www.fvwm.org/) window manager. Currently the package contains ~~two~~ ~~three~~ ~~four~~ ~~nine~~ fifteen themes. Please see http://www.vakuumverpackt.de/fvwm/ for details.
+The Mixed Theme Package is a package of themes for the [FVWM](http://www.fvwm.org/) window manager. Currently the package contains ~~two~~ ~~three~~ ~~four~~ ~~nine~~ fourteen themes. Please see http://www.vakuumverpackt.de/fvwm/ for details.
 
 A usability side note: The used screen locker [slock](http://tools.suckless.org/slock) has no interface at all. This means, whenever your screen gets locked and blacked out after five minutes of inactivity, all you have to do is enter your password blindly. After all, the best interface is no interface.
 
@@ -23,10 +23,6 @@ A usability side note: The used screen locker [slock](http://tools.suckless.org/
 #### Cable theme
 
 [![Cable theme](http://www.vakuumverpackt.de/fvwm/fvwm-cable-1920x1200s.png "Cable theme")](http://www.vakuumverpackt.de/fvwm/fvwm-cable-1920x1200.png)
-
-#### Elegant stripes theme
-
-[![Elegant stripes theme](http://www.vakuumverpackt.de/fvwm/fvwm-elegantstripes-1920x1200s.png "Elegant stripes theme")](http://www.vakuumverpackt.de/fvwm/fvwm-elegantstripes-1920x1200.png)
 
 #### Green stripes theme
 
