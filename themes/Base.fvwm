@@ -36,7 +36,20 @@ Mouse 1 FS A -
 Mouse 2 FST A -
 
 DestroyFunc FuncFvwmRaiseLowerX
+
+
+
+##
+## Focus stealing (http://fvwmwiki.xteddy.org/Tips/FocusStealing/)
+##
+
+DestroyFunc EWMHActivateWindowFunc
+AddToFunc EWMHActivateWindowFunc
+	+ I Nop
+
 DestroyFunc UrgencyFunc
+AddToFunc UrgencyFunc
+	+ I Nop
 
 
 
