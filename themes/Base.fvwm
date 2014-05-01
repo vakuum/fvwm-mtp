@@ -40,7 +40,7 @@ DestroyFunc FuncFvwmRaiseLowerX
 
 
 ##
-## Focus stealing (http://fvwmwiki.xteddy.org/Tips/FocusStealing/)
+## Focus stealing (http://fvwmforums.org/wiki/Tips/FocusStealing/)
 ##
 
 DestroyFunc EWMHActivateWindowFunc
