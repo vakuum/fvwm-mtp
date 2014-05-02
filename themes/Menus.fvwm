@@ -74,7 +74,7 @@ AddToMenu MenuMain
 	+ "resolution" Popup MenuResolution
 	+ "effects" Popup MenuEffects
 	+ "" Nop
-	+ "restart" Function Restart
+	+ "restart" Menu MenuRestart
 	+ "exit" Menu MenuExit
 
 DestroyMenu MenuDpms
@@ -89,11 +89,6 @@ AddToMenu MenuRearrange
 	+ "two columns" FvwmRearrange -tile -resize -m -mn 2
 	+ "three columns" FvwmRearrange -tile -resize -m -mn 3
 	+ "four columns" FvwmRearrange -tile -resize -m -mn 4
-
-DestroyFunc Restart
-AddToFunc Restart
-	+ I All (Iconic) Iconify off
-	+ I Restart
 
 
 
@@ -145,6 +140,23 @@ DestroyMenu MenuEffects
 AddToMenu MenuEffects
 	+ "enable" Exec bash $[mtp_scripts]/effects-enable $[mtp_scripts]
 	+ "disable" Exec bash $[mtp_scripts]/effects-disable $[mtp_scripts]
+
+
+
+##
+## Restart?
+##
+
+DestroyMenu MenuRestart
+AddToMenu MenuRestart "restart?"
+	+ "" Nop
+	+ "no" Nop
+	+ "yes" Function Restart
+
+DestroyFunc Restart
+AddToFunc Restart
+	+ I All (Iconic) Iconify off
+	+ I Restart
 
 
 
