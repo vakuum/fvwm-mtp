@@ -9,5 +9,5 @@ Style "Mozilla Firefox" SkipMapping, StartsOnPage 0 1 0, PositionPlacement Cente
 Style "Pidgin" SkipMapping, StartsOnPage 0 0 1
 Style "XChat" SkipMapping, StartsOnPage 0 2 0, PositionPlacement Center, NoPPosition, NoUSPosition
 Style "XMMS*" SkipMapping, StartsOnPage 0 1 2, !Title, !Borders
-Style "XTerm" PositionPlacement Center
+Style "XTerm" PositionPlacement Center, ResizeHintOverride
 
