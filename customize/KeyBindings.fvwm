@@ -45,6 +45,7 @@ Key KP_Next WTSF1246 N WindowBottomRight
 Key numbersign A 4 Popup MenuRearrange
 
 #
+Key BackSpace A 4 Function UnmanagedWindow
 Key L A 4 Exec xautolock -locknow
 Key Menu A N Popup MenuMain
 Key Pause WTSF1246 N Thumbnail

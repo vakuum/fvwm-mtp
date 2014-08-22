@@ -417,6 +417,19 @@ AddToFunc WindowListFunc
 
 
 ##
+## Unmanaged window
+##
+
+DestroyFunc UnmanagedWindow
+AddToFunc UnmanagedWindow
+	+ I ThisWindow (State 0) Style $[w.class] !Unmanaged, !StippledTitle
+	+ I TestRc (NoMatch) Style $[w.class] Unmanaged, StippledTitle
+	+ I Current State 0 toggle
+	+ I UpdateStyles
+
+
+
+##
 ## Terminal
 ##
 
