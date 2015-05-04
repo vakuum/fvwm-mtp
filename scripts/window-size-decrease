@@ -8,20 +8,14 @@ function decrease {
 	current=$1
 	width=$2
 	height=$3
-	target=$(( ($width + $patch) * ($height + $patch) ))
+	target=$(( $width * $height ))
 
 	if [ $current -gt $target ]
 	then
-		echo "ResizeMove frame ${width}p ${height}p 50-50w 50-50w"
+		echo "ResizeMove ${width}p ${height}p 50-50w 50-50w"
 		exit
 	fi
 }
-
-patch=0
-if [ "$class" = "XTerm" ]
-then
-	patch=13
-fi
 
 current=$(( $width * $height ))
 
@@ -32,5 +26,5 @@ decrease $current 1024 768
 decrease $current 960 600
 decrease $current 800 600
 
-echo "ResizeMove frame 800p 600p 50-50w 50-50w"
+echo "ResizeMove 800p 600p 50-50w 50-50w"
 

@@ -8,20 +8,19 @@ function increase {
 	current=$1
 	width=$2
 	height=$3
-	target=$(( ($width - $patch) * ($height - $patch) ))
+	target=$(( $width * $height ))
+
+	if [ "$class" = "XTerm" ]
+	then
+		target=$(( $target - ($target / 100 * 10) ))
+	fi
 
 	if [ $current -lt $target ]
 	then
-		echo "ResizeMove frame ${width}p ${height}p 50-50w 50-50w"
+		echo "ResizeMove ${width}p ${height}p 50-50w 50-50w"
 		exit
 	fi
 }
-
-patch=0
-if [ "$class" = "XTerm" ]
-then
-	patch=13
-fi
 
 current=$(( $width * $height ))
 
