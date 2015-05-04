@@ -4,5 +4,5 @@
 
 DestroyFunc Terminal
 AddToFunc Terminal
-	+ I Exec xterm -ls -geometry 140x54 -sl 5000 -fa '$[mtp_font_mono]' -fs '$[mtp_font_mono_size]'
+	+ I Exec xterm -ls -geometry 141x56+315+72 -sl 5000 -fa '$[mtp_font_mono]' -fs '$[mtp_font_mono_size]'
 

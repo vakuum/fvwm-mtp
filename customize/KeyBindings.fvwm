@@ -27,7 +27,7 @@ Key Right WTSF1246 4 Maximize 100 0
 Key KP_Add WTSF1246 N WindowSizeIncrease
 Key KP_Subtract WTSF1246 N WindowSizeDecrease
 
-Key KP_Insert WTSF1246 N WindowCenterResizeXterm 1280p 1024p
+Key KP_Insert WTSF1246 N WindowCenterResize 1280p 1024p
 
 # Placement
 Key KP_Home WTSF1246 N WindowTopLeft
