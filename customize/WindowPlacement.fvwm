@@ -4,8 +4,6 @@
 
 AddToFunc WindowPlacementHandler
 	+ I ThisWindow ("Mozilla Firefox") MoveToPage 1 0
-	+ I TestRc (Match) Resize frame 1280p 1024p
-	+ I TestRc (Match) WindowCenter
 	+ I ThisWindow ("XMMS") MoveToPage 2 1
 	+ I ThisWindow ("XMMS Playlist") MoveToPage 2 1
 	+ I ThisWindow ("XMMS Equalizer") MoveToPage 2 1
