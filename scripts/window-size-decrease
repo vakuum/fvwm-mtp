@@ -4,6 +4,8 @@ class=$1
 width=$2
 height=$3
 
+source "${mtp_scripts}/window-size-workaround"
+
 function decrease {
 	current=$1
 	width=$2

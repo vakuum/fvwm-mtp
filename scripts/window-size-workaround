@@ -1,0 +1,7 @@
+if [ -z "$width" ] && command -v xdotool &> /dev/null
+then
+	eval $(xdotool getwindowfocus getwindowgeometry --shell)
+	width=$WIDTH
+	height=$HEIGHT
+fi
+
