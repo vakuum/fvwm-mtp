@@ -299,6 +299,7 @@ AddToFunc WindowCenterCurrent
 DestroyFunc WindowCenterResize
 AddToFunc WindowCenterResize
 	+ I ResizeMove $0 $1 50-50w 50-50w
+	+ I Raise
 
 DestroyFunc WindowSizeIncrease
 AddToFunc WindowSizeIncrease
