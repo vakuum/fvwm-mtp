@@ -31,7 +31,7 @@ AddToMenu MenuGeometry
 
 DestroyMenu WindowOptions
 AddToMenu WindowOptions
-	+ "center" WindowCenterCurrent
+	+ "center" WindowMiddleCenter
 	+ "move" Move
 	+ "resize" Resize
 	+ "shade" WindowShade

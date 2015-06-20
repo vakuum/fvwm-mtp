@@ -292,10 +292,6 @@ DestroyFunc WindowCenter
 AddToFunc WindowCenter
 	+ I PipeRead 'bash $[mtp_scripts]/window-center $[w.x] $[w.y] $[w.width] $[w.height] $[vp.width] $[vp.height] $[page.nx] $[page.ny]'
 
-DestroyFunc WindowCenterCurrent
-AddToFunc WindowCenterCurrent
-	+ I Move 50-50w 50-50w
-
 DestroyFunc WindowCenterResize
 AddToFunc WindowCenterResize
 	+ I ResizeMove $0 $1 50-50w 50-50w
