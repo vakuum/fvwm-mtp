@@ -72,4 +72,4 @@ See [ChangeLog](https://github.com/vakuum/mtp/blob/master/ChangeLog).
 
 ## License
 
-Copyright (c) 2005-2015 Clemens Fuchslocher. See [LICENSE](https://github.com/vakuum/mtp/blob/master/LICENSE).
+Copyright (c) 2005-2016 Clemens Fuchslocher. See [LICENSE](https://github.com/vakuum/mtp/blob/master/LICENSE).
