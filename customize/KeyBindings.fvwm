@@ -3,12 +3,12 @@
 ##
 
 # Navigate
-Key F1 A M GotoPage 0 0
-Key F2 A M GotoPage 1 0
-Key F3 A M GotoPage 2 0
-Key F4 A M GotoPage 0 1
-Key F5 A M GotoPage 1 1
-Key F6 A M GotoPage 2 1
+Key F1 A 4 GotoPage 0 0
+Key F2 A 4 GotoPage 1 0
+Key F3 A 4 GotoPage 2 0
+Key F4 A 4 GotoPage 0 1
+Key F5 A 4 GotoPage 1 1
+Key F6 A 4 GotoPage 2 1
 
 Key Insert A 4 GotoPage 0 0
 Key Home A 4 GotoPage 1 0
